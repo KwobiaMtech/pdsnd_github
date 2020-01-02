@@ -13,6 +13,17 @@ bikeshare.py
 common.py
 main_stat.py
 
+
+### Create Python Environment
+
+Follow this [link to set up a python environment ](https://gist.github.com/simonw/4835a22c79a8d3c29dd155c716b19e16)
+
+### Install pandas and numpy
+```
+pip install pandas
+pip install numpy
+
+
 ### Work Done
 
 Bikeshare project is a python project that uses pandas to analyse bikeshare data(in csv format).The project makes it easier to explore and compare bikeshare data from three major cities(chicago,new york city and washington) in the US.Below are some of the work done
