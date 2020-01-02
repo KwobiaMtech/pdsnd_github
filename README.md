@@ -25,6 +25,7 @@ Bikeshare project is a python project that uses pandas to analyse bikeshare data
     c.New columns are also created to make data anaylysis easier and user friendly to be displayed.Example a month column was created which contains names of month this help display data with regards to the selected month by name example June.
 
 2.User is shown input statement by which they get to explore bikeshare data within three major cities(chicago,new york city and washington) in US
+
 3.User is also given option to see sample raw data data
 
 
