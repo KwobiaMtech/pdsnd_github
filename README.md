@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Project created on 2nd January 2020
 
 ### Project Title
-Replace the Project Title
+Data Anylisis of a Bikeshare Data from Three main cities
 
 ### Description
-Describe what your project is about and what it does
+This project uses pandas to analyse a bikeshare data samples from three main cities (chicago,new york city and washington).It includes user interactive inputs and responses.Data is displayed based on users inputs.
 
 ### Files used
-Include the files used
+bikeshare.py
+common.py
+main_stat.py
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
 
