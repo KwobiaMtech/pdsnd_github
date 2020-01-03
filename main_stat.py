@@ -183,12 +183,15 @@ def roller(key, value, filters, input_data):
 
 
 def new_get_filters():
+    # initializing input data to store selected filters
     input_data = {}
+    # merged various filters into a single dictionary
     filters = {'city': ['chicago', 'new york city', 'washington'],
                'month': ['January', 'February', 'March', 'April', 'May', 'June', 'all'],
                'day': ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'],
                'raw_response': ['yes', 'no']
                }
+    # user inputs placed into a single dictionary variable
     user_inputs = {'city': 'Which city(chicago,new york city,washington) would you like to explore?',
                    'month': 'Please enter month (all,June,May,April,February,March,January): ',
                    'day': 'Please enter day (all, monday, tuesday, ... sunday): ',
