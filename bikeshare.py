@@ -4,7 +4,7 @@ import main_stat as ms
 
 def main():
     while True:
-        city, month, day, raw_data = ms.get_filters()
+        city, month, day, raw_data = ms.new_get_filters()
         df = cf.load_data(city, month, day)
 
         ms.show_sample_data(df, raw_data)

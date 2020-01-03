@@ -162,6 +162,44 @@ def trip_duration_stats(df):
     print('-' * 40)
 
 
+def roller(key, value, filters, input_data):
+    user_input = input(value)
+    if key == 'city':
+        while user_input not in filters[key]:
+            user_input = input("Please ensure you entered the right city(chicago,new york city,washington): ")
+        input_data[key] = user_input
+    if key == 'month':
+        while user_input not in filters[key]:
+            user_input = input("Please ensure you entered the right month(all,June,May,April,February,March,January): ")
+        input_data[key] = user_input
+    if key == 'day':
+        while user_input not in filters[key]:
+            user_input = input("Please ensure you entered the right day(all, monday, tuesday, ... sunday): ")
+        input_data[key] = user_input
+    if key == 'raw_response':
+        while user_input not in filters[key]:
+            user_input = input("Would you like to see 5 line sample raw data.Type yes or no): ")
+        input_data[key] = user_input
+
+
+def new_get_filters():
+    input_data = {}
+    filters = {'city': ['chicago', 'new york city', 'washington'],
+               'month': ['January', 'February', 'March', 'April', 'May', 'June', 'all'],
+               'day': ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'],
+               'raw_response': ['yes', 'no']
+               }
+    user_inputs = {'city': 'Which city(chicago,new york city,washington) would you like to explore?',
+                   'month': 'Please enter month (all,June,May,April,February,March,January): ',
+                   'day': 'Please enter day (all, monday, tuesday, ... sunday): ',
+                   'raw_response': 'Would you like to see 5 line sample raw data.Type yes or no): '}
+    for i in user_inputs:
+        roller(i, user_inputs[i], filters, input_data)
+
+    print('-' * 40)
+    return input_data['city'].lower(), input_data['month'], input_data['day'], input_data['raw_response']
+
+
 def get_filters():
     cities = ['chicago', 'new york city', 'washington']
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'all']
