@@ -2,7 +2,7 @@
 Project created on 2nd January 2020
 
 ### Project Title
-Data Anylisis of a Bikeshare Data from Three main cities
+Data Analysis of a Bikeshare Data from Three main cities
 
 ### Description
 This project uses python pandas to analyse a bikeshare data samples from three main cities (chicago,new york city and washington).It includes user interactive inputs and responses.Data is displayed based on users inputs.
@@ -23,7 +23,25 @@ Follow this [link to set up a python environment ](https://gist.github.com/simon
 pip install pandas
 pip install numpy
 
+git clone https://github.com/KwobiaMtech/pdsnd_github
+
+ensure system is running python3
+
 ```
+### Follow links below to Download CSV data for the project
+1.[chicago.csv ](https://drive.google.com/open?id=1q4-JdC8aBJcV_94ZCDKVM-xz_gMjERtv)
+
+2.[washington.csv ](https://drive.google.com/open?id=1ioxxB-5impX9YQZMEVrR78ux7dWb6req)
+
+3.[new_york_city.csv ](https://drive.google.com/open?id=1PHL8y9LTl44yjFJQS_oS1yc73egKKus9)
+
+Include downloaded files  in project
+
+```
+run python bikeshare.py
+
+```
+
 
 ### Work Done
 
